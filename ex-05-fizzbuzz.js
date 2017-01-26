@@ -12,20 +12,18 @@
 // output: string
 
 var fizzbuzz= function(number){
-  var outputString=""
+  var outputString="";
 
-  for (var i=1; i < number; i++){
-    if (3% number[i]===0 && 5% number[i]===0) {
+  for (var i=1; i <= number; i++){
+    if (i%3===0 && i%5===0) {
       outputString= outputString + "FizZBuzZ"
-    } else if (3% number[i]===0){
-      outputString=outputString + "fiz"
-    } else if (5% number[i]===0){
+    } else if (i%3===0){
+      outputString=outputString + "fizz"
+    } else if (i%5===0){
       outputString=outputString + "buzz"
     } else {
       outputString=outputString + "."
     }
-
-
   }return outputString
 
 
